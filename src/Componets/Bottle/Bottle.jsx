@@ -2,7 +2,7 @@
 
 import './Bottle.css'
 
-const Bottle = ({bottle}) => {
+const Bottle = ({bottle,handlecart}) => {
     console.log(bottle);
     const {name,seller,price,img} = bottle;
     return (
@@ -11,7 +11,7 @@ const Bottle = ({bottle}) => {
             <img src={img} alt="" />
             <h3>{seller}</h3>
             <h3>{price}</h3>
-
+            <button onClick={()=> handlecart(bottle)}>purchase</button>
         </div>
     );
 };
