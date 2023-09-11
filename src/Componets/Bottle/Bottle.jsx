@@ -3,7 +3,7 @@
 import './Bottle.css'
 
 const Bottle = ({bottle,handlecart}) => {
-    console.log(bottle);
+    // console.log(bottle);
     const {name,seller,price,img} = bottle;
     return (
         <div className='bottle'>
